@@ -1,0 +1,79 @@
+# cwm configuration
+
+# applications menu
+command xterm xterm 
+command files xfe
+command web firefox
+command mail thunderbird
+command nvi 'xterm -e nvi'
+command cmus "xterm -bg black -fg white -g +427+15 -g 104x33 -e cmus"
+command keepass keepassxc
+command syncthing syncthing
+command gnucash gnucash
+command darktable darktable
+command gimp gimp
+command nicotine nicotine
+command tag puddletag
+command torrent qbittorrent 
+command xcalc "xcalc -stipple"
+command xlock "xlock -mode euler2d"
+
+# window behavior
+gap 15 0 0 0
+sticky yes
+ignore "xconsole"
+autogroup 0 xconsole,XConsole
+snapdist 7
+fontname "Inter"
+color menubg "powder blue"
+
+# keybindings
+
+## application shortcuts
+bind-key 4-t "xterm -bg black -fg white"
+bind-key 4-b firefox
+bind-key 4-f xfe
+bind-key 4-m thunderbird
+bind-key 4-c "xterm -bg black -fg white -g +427+15 -g 104x33 -e cmus"
+bind-key 4-p keepassxc
+bind-key 4-n "xcalc -stipple"
+bind-key 4-z 'sct 3500'
+bind-key 4-Z 'sct 2500'
+bind-key 4M-x xkill
+bind-key 4-x 'scrot -u'
+
+## group management
+bind-key M-1 group-only-1
+bind-key M-2 group-only-2
+bind-key M-3 group-only-3
+bind-key M-4 group-only-4
+bind-key M-5 group-only-5
+bind-key M-6 group-only-6
+bind-key M-7 group-only-7
+bind-key M-8 group-only-8
+bind-key M-9 group-only-9
+bind-key MS-1 window-movetogroup-1
+bind-key MS-2 window-movetogroup-2
+bind-key MS-3 window-movetogroup-3
+bind-key MS-4 window-movetogroup-4
+bind-key MS-5 window-movetogroup-5
+bind-key MS-6 window-movetogroup-6
+bind-key MS-7 window-movetogroup-7
+bind-key MS-8 window-movetogroup-8
+bind-key MS-9 window-movetogroup-9
+bind-key 4-1 group-toggle-1
+bind-key 4-2 group-toggle-2
+bind-key 4-3 group-toggle-3
+bind-key 4-4 group-toggle-4
+bind-key 4-5 group-toggle-5
+bind-key 4-6 group-toggle-6
+bind-key 4-7 group-toggle-7
+bind-key 4-8 group-toggle-8
+bind-key 4-9 group-toggle-9
+
+## window tiling
+bind-key 4-h window-vtile
+bind-key 4-k window-htile
+
+## mouse bindings
+bind-mouse 4-1 window-resize

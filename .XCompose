@@ -1,0 +1,430 @@
+# see /usr/X11R6/include/X11/keysymdef.h for character escapes
+# see also /usr/X11R6/share/X11/locale/en_US.UTF-8 for original Compose file
+# (^ → asciicircum, etc.)
+# set compose key in .xinitrc or .xsession (here, right alt key): 'setxkbmap -option compose:ralt &'
+# Environment variables to put in ~/.xsession (if using xenodm) or ~/.profile (if not using a display manager): export LC-CTYPE="en_US.UTF-8" (to set locale charset), export GTK_IM_MODULE="xim" (to enable these compose key settings in GTK apps), export LESSCHARSET="UTF-8" (for enabling unicode in less(1)). I put these at the end of my ~/.xsession before starting the window manager and I don't put an '&' at the end of these lines
+# some bindings in this file:
+# lt $ _ for currency—£, ¥, ¢, ¤
+# Alt u _ for breve—ă, ĕ, ĭ, ŏ, ŭ
+# Alt v _ for caron—č, ď, ř
+# Alt , _ for cedilla—ç, ģ, ļ
+# Alt ^ _ for circumflex—â, ê, î, ô, û
+# Alt " _ for diaeresis—ä, ë, ï, ö, ü
+# Alt ~ _ for tilde—ñ, Ñ, Ã
+# Alt * _ for Greek letters—α, ω, Ω, π, τ
+# Repeating the character for an alternate—¡, ¿
+# Various math symbols: ×, ÷, ∞, ∗, ≪, ≫, ≠, ≈, ∥, ±
+# Arrows: ← → ↑ ↓
+# Pretty typography: dashes — – ‐, quotes “ ” ‘ ’, ellipses … ⋯ ⋰
+# Alt & _ for curly math letters—ℒ, ℱ, ℰ
+# source: user backrow on daemonforums (http://daemonforums.org/showthread.php?t=5371)
+
+<Multi_key> <space> <space> : "*" # 00A0 no-break space
+<Multi_key> <exclam> <exclam> : "¡" # 00A1 inverted exclamation mark
+<Multi_key> <dollar> <c> : "¢" # 00A2 cent sign
+<Multi_key> <dollar> <l> : "£" # 00A3 pound sign
+<Multi_key> <dollar> <x> : "¤" # 00A4 currency sign
+<Multi_key> <dollar> <y> : "¥" # 00A5 yen sign
+#<Multi_key> <bar> <bar> : "¦" # 00A6 broken vertical bar
+<Multi_key> <o> <s> : "§" # 00A7 section sign
+<Multi_key> <s> <o> : "§" # 00A7 section sign
+<Multi_key> <quotedbl> <space> : "¨" # 00A8 spacing diaeresis
+<Multi_key> <o> <c> : "©" # 00A9 copyright sign
+<Multi_key> <c> <o> : "©" # 00A9 copyright sign
+<Multi_key> <o> <r> : "®" # 00AE registered trade mark sign
+<Multi_key> <r> <o> : "®" # 00AE registered trade mark sign
+<Multi_key> <underscore> <space> : "¯" # 00AF spacing macron
+<Multi_key> <o> <o> : "°" # 00B0 degree sign
+<Multi_key> <plus> <minus> : "±" # 00B1 plus-or-minus sign
+<Multi_key> <apostrophe> <space> : "´" # 00B4 spacing acute
+<Multi_key> <p> <g> : "¶" # 00B6 paragraph sign
+<Multi_key> <period> <period> : "·" # 00B7 middle dot
+<Multi_key> <comma> <space> : "¸" # 00B8 spacing cedilla
+<Multi_key> <asciicircum> <1> : "¹" # 00B9 superscript digit one
+#<Multi_key> <s> <o> : "º" # 00BA masculine ordinal indicator
+#<Multi_key> <greater> <greater> : "»" # 00BB right pointing guillemet
+<Multi_key> <1> <4> : "¼" # 00BC fraction one quarter
+<Multi_key> <1> <3> : "⅓" # fraction one third
+<Multi_key> <1> <2> : "½" # 00BD fraction one half
+<Multi_key> <3> <4> : "¾" # 00BE fraction three quarters
+<Multi_key> <question> <question> : "¿" # 00BF inverted question mark
+<Multi_key> <grave> <A> : "À" # 00C0 latin capital letter a grave
+<Multi_key> <apostrophe> <A> : "Á" # 00C1 latin capital letter a acute
+<Multi_key> <asciicircum> <A> : "Â" # 00C2 latin capital letter a circumflex
+<Multi_key> <asciitilde> <A> : "Ã" # 00C3 latin capital letter a tilde
+<Multi_key> <quotedbl> <A> : "Ä" # 00C4 latin capital letter a diaeresis
+<Multi_key> <o> <A> : "Å" # 00C5 latin capital letter a ring
+<Multi_key> <A> <E> : "Æ" # 00C6 latin capital letter a e
+<Multi_key> <comma> <C> : "Ç" # 00C7 latin capital letter c cedilla
+<Multi_key> <grave> <E> : "È" # 00C8 latin capital letter e grave
+<Multi_key> <apostrophe> <E> : "É" # 00C9 latin capital letter e acute
+<Multi_key> <asciicircum> <E> : "Ê" # 00CA latin capital letter e circumflex
+<Multi_key> <quotedbl> <E> : "Ë" # 00CB latin capital letter e diaeresis
+<Multi_key> <grave> <I> : "Ì" # 00CC latin capital letter i grave
+<Multi_key> <apostrophe> <I> : "Í" # 00CD latin capital letter i acute
+<Multi_key> <asciicircum> <I> : "Î" # 00CE latin capital letter i circumflex
+<Multi_key> <quotedbl> <I> : "Ï" # 00CF latin capital letter i diaeresis
+<Multi_key> <D> <minus> : "Ð" # 00D0 latin capital letter eth
+<Multi_key> <minus> <D> : "Ð" # 00D0 latin capital letter eth
+<Multi_key> <asciitilde> <N> : "Ñ" # 00D1 latin capital letter n tilde
+<Multi_key> <grave> <O> : "Ò" # 00D2 latin capital letter o grave
+<Multi_key> <apostrophe> <O> : "Ó" # 00D3 latin capital letter o acute
+<Multi_key> <asciicircum> <O> : "Ô" # 00D4 latin capital letter o circumflex
+<Multi_key> <asciitilde> <O> : "Õ" # 00D5 latin capital letter o tilde
+<Multi_key> <quotedbl> <O> : "Ö" # 00D6 latin capital letter o diaeresis
+<Multi_key> <x> <x> : "×" # 00D7 multiplication sign
+<Multi_key> <slash> <O> : "Ø" # 00D8 latin capital letter o with stroke
+<Multi_key> <grave> <U> : "Ù" # 00D9 latin capital letter u grave
+<Multi_key> <apostrophe> <U> : "Ú" # 00DA latin capital letter u acute
+<Multi_key> <asciicircum> <U> : "Û" # 00DB latin capital letter u circumflex
+<Multi_key> <quotedbl> <U> : "Ü" # 00DC latin capital letter u diaeresis
+<Multi_key> <apostrophe> <Y> : "Ý" # 00DD latin capital letter y acute
+<Multi_key> <bar> <P> : "Þ" # 00DE latin capital letter thorn
+<Multi_key> <s> <s> : "ß" # 00DF latin small letter eszett
+<Multi_key> <grave> <a> : "à" # 00E0 latin small letter a grave
+<Multi_key> <apostrophe> <a> : "á" # 00E1 latin small letter a acute
+<Multi_key> <asciicircum> <a> : "â" # 00E2 latin small letter a circumflex
+<Multi_key> <asciitilde> <a> : "ã" # 00E3 latin small letter a tilde
+<Multi_key> <quotedbl> <a> : "ä" # 00E4 latin small letter a diaeresis
+<Multi_key> <o> <a> : "å" # 00E5 latin small letter a ring
+<Multi_key> <a> <e> : "æ" # 00E6 latin small letter a e
+<Multi_key> <comma> <c> : "ç" # 00E7 latin small letter c cedilla
+<Multi_key> <grave> <e> : "è" # 00E8 latin small letter e grave
+<Multi_key> <apostrophe> <e> : "é" # 00E9 latin small letter e acute
+<Multi_key> <asciicircum> <e> : "ê" # 00EA latin small letter e circumflex
+<Multi_key> <quotedbl> <e> : "ë" # 00EB latin small letter e diaeresis
+<Multi_key> <grave> <i> : "ì" # 00EC latin small letter i grave
+<Multi_key> <apostrophe> <i> : "í" # 00ED latin small letter i acute
+<Multi_key> <asciicircum> <i> : "î" # 00EE latin small letter i circumflex
+<Multi_key> <quotedbl> <i> : "ï" # 00EF latin small letter i diaeresis
+<Multi_key> <minus> <d> : "ð" # 00F0 latin small letter eth
+<Multi_key> <d> <minus> : "ð" # 00F0 latin small letter eth
+<Multi_key> <asciitilde> <n> : "ñ" # 00F1 latin small letter n tilde
+<Multi_key> <grave> <o> : "ò" # 00F2 latin small letter o grave
+<Multi_key> <apostrophe> <o> : "ó" # 00F3 latin small letter o acute
+<Multi_key> <asciicircum> <o> : "ô" # 00F4 latin small letter o circumflex
+<Multi_key> <asciitilde> <o> : "õ" # 00F5 latin small letter o tilde
+<Multi_key> <quotedbl> <o> : "ö" # 00F6 latin small letter o diaeresis
+<Multi_key> <colon> <minus> : "÷" # 00F7 division sign
+<Multi_key> <minus> <colon> : "÷" # 00F7 division sign
+<Multi_key> <slash> <o> : "ø" # 00F8 latin small letter o with stroke
+<Multi_key> <grave> <u> : "ù" # 00F9 latin small letter u grave
+<Multi_key> <apostrophe> <u> : "ú" # 00FA latin small letter u acute
+<Multi_key> <asciicircum> <u> : "û" # 00FB latin small letter u circumflex
+<Multi_key> <quotedbl> <u> : "ü" # 00FC latin small letter u diaeresis
+<Multi_key> <apostrophe> <y> : "ý" # 00FD latin small letter y acute
+<Multi_key> <t> <h> : "þ" # 00FE latin small letter thorn
+<Multi_key> <quotedbl> <y> : "ÿ" # 00FF latin small letter y diaeresis
+<Multi_key> <underscore> <A> : "Ā" # 0100 latin capital letter a with macron
+<Multi_key> <underscore> <a> : "ā" # 0101 latin small letter a with macron
+<Multi_key> <u> <A> : "Ă" # 0102 latin capital letter a with breve
+<Multi_key> <u> <a> : "ă" # 0103 latin small letter a with breve
+<Multi_key> <semicolon> <A> : "Ą" # 0104 latin capital letter a with ogonek
+<Multi_key> <semicolon> <a> : "ą" # 0105 latin small letter a with ogonek
+<Multi_key> <apostrophe> <C> : "Ć" # 0106 latin capital letter c with acute
+<Multi_key> <apostrophe> <c> : "ć" # 0107 latin small letter c with acute
+<Multi_key> <asciicircum> <C> : "Ĉ" # 0108 latin capital letter c with circumflex
+<Multi_key> <asciicircum> <c> : "ĉ" # 0109 latin small letter c with circumflex
+<Multi_key> <period> <C> : "Ċ" # 010A latin capital letter c with dot above
+<Multi_key> <period> <c> : "ċ" # 010B latin small letter c with dot above
+<Multi_key> <v> <C> : "Č" # 010C latin capital letter c with caron
+<Multi_key> <v> <c> : "č" # 010D latin small letter c with caron
+<Multi_key> <v> <D> : "Ď" # 010E latin capital letter d with caron
+<Multi_key> <v> <d> : "ď" # 010F latin small letter d with caron
+<Multi_key> <slash> <D> : "Đ" # 0110 latin capital letter d with stroke
+<Multi_key> <slash> <d> : "đ" # 0111 latin small letter d with stroke
+<Multi_key> <underscore> <E> : "Ē" # 0112 latin capital letter e with macron
+<Multi_key> <underscore> <e> : "ē" # 0113 latin small letter e with macron
+<Multi_key> <u> <E> : "Ĕ" # 0114 latin capital letter e with breve
+<Multi_key> <u> <e> : "ĕ" # 0115 latin small letter e with breve
+<Multi_key> <period> <E> : "Ė" # 0116 latin capital letter e with dot above
+<Multi_key> <period> <e> : "ė" # 0117 latin small letter e with dot above
+<Multi_key> <semicolon> <E> : "Ę" # 0118 latin capital letter e with ogonek
+<Multi_key> <semicolon> <e> : "ę" # 0119 latin small letter e with ogonek
+<Multi_key> <v> <E> : "Ě" # 011A latin capital letter e with caron
+<Multi_key> <v> <e> : "ě" # 011B latin small letter e with caron
+<Multi_key> <asciicircum> <G> : "Ĝ" # 011C latin capital letter g with circumflex
+<Multi_key> <asciicircum> <g> : "ĝ" # 011D latin small letter g with circumflex
+<Multi_key> <u> <G> : "Ğ" # 011E latin capital letter g with breve
+<Multi_key> <u> <g> : "ğ" # 011F latin small letter g with breve
+<Multi_key> <period> <G> : "Ġ" # 0120 latin capital letter g with dot above
+<Multi_key> <period> <g> : "ġ" # 0121 latin small letter g with dot above
+<Multi_key> <comma> <G> : "Ģ" # 0122 latin capital letter g with cedilla
+<Multi_key> <comma> <g> : "ģ" # 0123 latin small letter g with cedilla
+<Multi_key> <asciicircum> <H> : "Ĥ" # 0124 latin capital letter h with circumflex
+<Multi_key> <asciicircum> <h> : "ĥ" # 0125 latin small letter h with circumflex
+<Multi_key> <slash> <H> : "Ħ" # 0126 latin capital letter h with stroke
+<Multi_key> <slash> <h> : "ħ" # 0127 latin small letter h with stroke
+<Multi_key> <asciitilde> <I> : "Ĩ" # 0128 latin capital letter i with tilde
+<Multi_key> <asciitilde> <i> : "ĩ" # 0129 latin small letter i with tilde
+<Multi_key> <underscore> <I> : "Ī" # 012A latin capital letter i with macron
+<Multi_key> <underscore> <i> : "ī" # 012B latin small letter i with macron
+<Multi_key> <u> <I> : "Ĭ" # 012C latin capital letter i with breve
+<Multi_key> <u> <i> : "ĭ" # 012D latin small letter i with breve
+<Multi_key> <semicolon> <I> : "Į" # 012E latin capital letter i with ogonek
+<Multi_key> <semicolon> <i> : "į" # 012F latin small letter i with ogonek
+<Multi_key> <period> <I> : "İ" # 0130 latin capital letter i with dot above
+<Multi_key> <i> <i> : "ı" # 0131 latin small letter dotless i
+<Multi_key> <I> <J> : "Ĳ" # 0132 latin capital ligature ij
+<Multi_key> <i> <j> : "ĳ" # 0133 latin small ligature ij
+<Multi_key> <asciicircum> <J> : "Ĵ" # 0134 latin capital letter j with circumflex
+<Multi_key> <asciicircum> <j> : "ĵ" # 0135 latin small letter j with circumflex
+<Multi_key> <comma> <K> : "Ķ" # 0136 latin capital letter k with cedilla
+<Multi_key> <comma> <k> : "ķ" # 0137 latin small letter k with cedilla
+# 0138 latin small letter kra
+<Multi_key> <apostrophe> <L> : "Ĺ" # 0139 latin capital letter l with acute
+<Multi_key> <apostrophe> <l> : "ĺ" # 013A latin small letter l with acute
+<Multi_key> <comma> <L> : "Ļ" # 013B latin capital letter l with cedilla
+<Multi_key> <comma> <l> : "ļ" # 013C latin small letter l with cedilla
+<Multi_key> <v> <L> : "Ľ" # 013D latin capital letter l with caron
+<Multi_key> <v> <l> : "ľ" # 013E latin small letter l with caron
+<Multi_key> <period> <L> : "Ŀ" # 013F latin capital letter l with middle dot
+<Multi_key> <period> <l> : "ŀ" # 0140 latin small letter l with middle dot
+<Multi_key> <slash> <L> : "Ł" # 0141 latin capital letter l with stroke
+<Multi_key> <slash> <l> : "ł" # 0142 latin small letter l with stroke
+<Multi_key> <apostrophe> <N> : "Ń" # 0143 latin capital letter n with acute
+<Multi_key> <apostrophe> <n> : "ń" # 0144 latin small letter n with acute
+<Multi_key> <comma> <N> : "Ņ" # 0145 latin capital letter n with cedilla
+<Multi_key> <comma> <n> : "ņ" # 0146 latin small letter n with cedilla
+<Multi_key> <v> <N> : "Ň" # 0147 latin capital letter n with caron
+<Multi_key> <v> <n> : "ň" # 0148 latin small letter n with caron
+# 0149 is deprecated
+# 014A latin capital letter eng
+# 014B latin small letter eng
+<Multi_key> <underscore> <O> : "Ō" # 014C latin capital letter o with macron
+<Multi_key> <underscore> <o> : "ō" # 014D latin small letter o with macron
+<Multi_key> <u> <O> : "Ŏ" # 014E latin capital letter o with breve
+<Multi_key> <u> <o> : "ŏ" # 014F latin small letter o with breve
+<Multi_key> <apostrophe> <Multi_key> <apostrophe> <O> : "Ő" # 0150 latin capital letter o with double acute
+<Multi_key> <apostrophe> <Multi_key> <apostrophe> <o> : "ő" # 0151 latin small letter o with double acute
+<Multi_key> <O> <E> : "Œ" # 0152 latin capital ligature oe
+<Multi_key> <o> <e> : "œ" # 0153 latin small ligature oe
+<Multi_key> <apostrophe> <R> : "Ŕ" # 0154 latin capital letter r with acute
+<Multi_key> <apostrophe> <r> : "ŕ" # 0155 latin small letter r with acute
+<Multi_key> <comma> <R> : "Ŗ" # 0156 latin capital letter r with cedilla
+<Multi_key> <comma> <r> : "ŗ" # 0157 latin small letter r with cedilla
+<Multi_key> <v> <R> : "Ř" # 0158 latin capital letter r with caron
+<Multi_key> <v> <r> : "ř" # 0159 latin small letter r with caron
+<Multi_key> <apostrophe> <S> : "Ś" # 015A latin capital letter s with acute
+<Multi_key> <apostrophe> <s> : "ś" # 015B latin small letter s with acute
+<Multi_key> <asciicircum> <S> : "Ŝ" # 015C latin capital letter s with circumflex
+<Multi_key> <asciicircum> <s> : "ŝ" # 015D latin small letter s with circumflex
+<Multi_key> <comma> <S> : "Ş" # 015E latin capital letter s with cedilla
+<Multi_key> <comma> <s> : "ş" # 015F latin small letter s with cedilla
+<Multi_key> <v> <S> : "Š" # 0160 latin capital letter s with caron
+<Multi_key> <v> <s> : "š" # 0161 latin small letter s with caron
+<Multi_key> <comma> <T> : "Ţ" # 0162 latin capital letter t with cedilla
+<Multi_key> <comma> <t> : "ţ" # 0163 latin small letter t with cedilla
+<Multi_key> <v> <T> : "Ť" # 0164 latin capital letter t with caron
+<Multi_key> <v> <t> : "ť" # 0165 latin small letter t with caron
+<Multi_key> <slash> <T> : "Ŧ" # 0166 latin capital letter t with stroke
+<Multi_key> <slash> <t> : "ŧ" # 0167 latin small letter t with stroke
+<Multi_key> <asciitilde> <U> : "Ũ" # 0168 latin capital letter u with tilde
+<Multi_key> <asciitilde> <u> : "ũ" # 0169 latin small letter u with tilde
+<Multi_key> <underscore> <U> : "Ū" # 016A latin capital letter u with macron
+<Multi_key> <underscore> <u> : "ū" # 016B latin small letter u with macron
+<Multi_key> <u> <U> : "Ŭ" # 016C latin capital letter u with breve
+<Multi_key> <u> <u> : "ŭ" # 016D latin small letter u with breve
+<Multi_key> <o> <U> : "Ů" # 016E latin capital letter u with ring above
+<Multi_key> <o> <u> : "ů" # 016F latin small letter u with ring above
+<Multi_key> <apostrophe> <Multi_key> <apostrophe> <U> : "Ű" # 0170 latin capital letter u with double acute
+<Multi_key> <apostrophe> <Multi_key> <apostrophe> <u> : "ű" # 0171 latin small letter u with double acute
+<Multi_key> <semicolon> <U> : "Ų" # 0172 latin capital letter u with ogonek
+<Multi_key> <semicolon> <u> : "ų" # 0173 latin small letter u with ogonek
+<Multi_key> <asciicircum> <W> : "Ŵ" # 0174 latin capital letter w with circumflex
+<Multi_key> <asciicircum> <w> : "ŵ" # 0175 latin small letter w with circumflex
+<Multi_key> <asciicircum> <Y> : "Ŷ" # 0176 latin capital letter y with circumflex
+<Multi_key> <asciicircum> <y> : "ŷ" # 0177 latin small letter y with circumflex
+<Multi_key> <quotedbl> <Y> : "Ÿ" # 0178 latin capital letter y with diaeresis
+<Multi_key> <apostrophe> <Z> : "Ź" # 0179 latin capital letter z with acute
+<Multi_key> <apostrophe> <z> : "ź" # 017A latin small letter z with acute
+<Multi_key> <period> <Z> : "Ż" # 017B latin capital letter z with dot above
+<Multi_key> <period> <z> : "ż" # 017C latin small letter z with dot above
+<Multi_key> <v> <Z> : "Ž" # 017D latin capital letter z with caron
+<Multi_key> <v> <z> : "ž" # 017E latin small letter z with caron
+<Multi_key> <f> <f> : "ſ" # 017F latin small letter long s
+
+
+<Multi_key> <o> <space> : "˚" # 02DA spacing ring above
+
+<Multi_key> <apostrophe> <Multi_key> <apostrophe> <space> : "˝" # 02DD spacing double acute
+
+<Multi_key> <asterisk> <A> : "Α" # 0391 capital alpha
+<Multi_key> <asterisk> <B> : "Β" # 0392 capital beta
+<Multi_key> <asterisk> <G> : "Γ" # 0393 capital gamma
+<Multi_key> <asterisk> <D> : "Δ" # 0394 capital delta
+<Multi_key> <asterisk> <E> : "Ε" # 0395 capital epsilon
+<Multi_key> <asterisk> <Z> : "Ζ" # 0396 capital zeta
+<Multi_key> <asterisk> <H> : "Η" # 0397 capital eta
+<Multi_key> <asterisk> <U> : "Θ" # 0398 capital theta
+<Multi_key> <asterisk> <I> : "Ι" # 0399 capital iota
+<Multi_key> <asterisk> <K> : "Κ" # 039A capital kappa
+<Multi_key> <asterisk> <L> : "Λ" # 039B capital lambda
+<Multi_key> <asterisk> <M> : "Μ" # 039C capital mu
+<Multi_key> <asterisk> <N> : "Ν" # 039D capital nu
+<Multi_key> <asterisk> <J> : "Ξ" # 039E capital xi
+<Multi_key> <asterisk> <O> : "Ο" # 039F capital omicron
+<Multi_key> <asterisk> <P> : "Π" # 03A0 capital pi
+<Multi_key> <asterisk> <R> : "Ρ" # 03A1 capital rho
+# final sigma would go here
+<Multi_key> <asterisk> <S> : "Σ" # 03A3 capital sigma
+<Multi_key> <asterisk> <T> : "Τ" # 03A4 capital tau
+<Multi_key> <asterisk> <Y> : "Υ" # 03A5 capital upsilon
+<Multi_key> <asterisk> <F> : "Φ" # 03A6 capital phi
+<Multi_key> <asterisk> <X> : "Χ" # 03A7 capital chi
+<Multi_key> <asterisk> <C> : "Ψ" # 03A8 capital psi
+<Multi_key> <asterisk> <V> : "Ω" # 03A9 capital omega
+# see also 2127
+
+<Multi_key> <asterisk> <a> : "α" # 03B1 small alpha
+<Multi_key> <asterisk> <b> : "β" # 03B2 small beta
+<Multi_key> <asterisk> <g> : "γ" # 03B3 small gamma
+<Multi_key> <asterisk> <d> : "δ" # 03B4 small delta
+<Multi_key> <asterisk> <e> : "ε" # 03B5 small epsilon
+<Multi_key> <asterisk> <z> : "ζ" # 03B6 small zeta
+<Multi_key> <asterisk> <h> : "η" # 03B7 small eta
+<Multi_key> <asterisk> <u> : "θ" # 03B8 small theta
+<Multi_key> <asterisk> <i> : "ι" # 03B9 small iota
+<Multi_key> <asterisk> <k> : "κ" # 03BA small kappa
+<Multi_key> <asterisk> <l> : "λ" # 03BB small lambda
+<Multi_key> <asterisk> <m> : "μ" # 03BC small mu
+<Multi_key> <asterisk> <n> : "ν" # 03BD small nu
+<Multi_key> <asterisk> <j> : "ξ" # 03BE small xi
+<Multi_key> <asterisk> <o> : "ο" # 03BF small omicron
+<Multi_key> <asterisk> <p> : "π" # 03C0 small pi
+<Multi_key> <asterisk> <r> : "ρ" # 03C1 small rho
+<Multi_key> <asterisk> <q> : "ς" # 03C2 small final sigma
+<Multi_key> <asterisk> <s> : "σ" # 03C3 small sigma
+<Multi_key> <asterisk> <t> : "τ" # 03C4 small tau
+<Multi_key> <asterisk> <y> : "υ" # 03C5 small upsilon
+<Multi_key> <asterisk> <f> : "φ" # 03C6 small phi
+<Multi_key> <asterisk> <x> : "χ" # 03C7 small chi
+<Multi_key> <asterisk> <c> : "ψ" # 03C8 small psi
+<Multi_key> <asterisk> <v> : "ω" # 03C9 small omega
+
+<Multi_key> <h> <y> : "‐" # 2010 hyphen
+<Multi_key> <exclam> <minus> : "‑" # 2011 non-breaking hyphen
+<Multi_key> <f> <i> : "‒" # 2012 figure dash
+<Multi_key> <e> <n> : "–" # 2013 en dash
+<Multi_key> <e> <m> : "—" # 2014 em dash
+
+<Multi_key> <less> <apostrophe> : "‘" # 2018 left single quotation mark
+<Multi_key> <greater> <apostrophe> : "’" # 2019 right single quotation mark
+<Multi_key> <comma> <apostrophe> : "ʻ" # 02BB modifier letter turned comma
+
+<Multi_key> <less> <quotedbl> : "“" # 201C left double quotation mark
+<Multi_key> <greater> <quotedbl> : "”" # 201D right double quotation mark
+
+<Multi_key> <period> <underscore> : "…" # 2026 horizontal ellipsis
+
+<Multi_key> <1> <apostrophe> : "′" # 2032 prime
+<Multi_key> <2> <apostrophe> : "″" # 2033 double prime
+<Multi_key> <3> <apostrophe> : "‴" # 2034 triple prime
+
+<Multi_key> <underscore> <underscore> : "‾" # 203E overline
+
+<Multi_key> <slash> <slash> : "⁄" # 2044 fraction slash
+
+<Multi_key> <dollar> <e> : "€" # 20AC euro sign
+
+<Multi_key> <dollar> <r> : "₹" # 20B9 indian rupee sign
+
+<Multi_key> <minus> <h> : "ℏ" # 210F planck constant over two pi
+
+<Multi_key> <ampersand> <L> : "ℒ" # 2112 script capital l
+
+<Multi_key> <R> <x> : "℞" # 211E prescription take
+
+<Multi_key> <t> <m> : "™" # 2122 trademark
+
+<Multi_key> <asterisk> <W> : "℧" # 2127 inverted ohm sign
+
+<Multi_key> <ampersand> <E> : "ℰ" # 2130 script capital e
+<Multi_key> <ampersand> <F> : "ℱ" # 2131 script capital f
+
+<Multi_key> <less> <minus> : "←" # 2190 leftwards arrow
+<Multi_key> <bar> <asciicircum> : "↑" # 2191 upwards arrow
+<Multi_key> <minus> <greater> : "→" # 2192 rightwards arrow
+<Multi_key> <bar> <v> : "↓" # 2193 downwards arrow
+<Multi_key> <bar> <V> : "↓" # 2193 downwards arrow
+
+<Multi_key> <v> <less> : "↵" # 21B5 downwards arrow with corner leftwards
+
+<Multi_key> <P> <P> : "∏" # 220F n-ary product
+<Multi_key> <S> <S> : "∑" # 2211 n-ary summation
+<Multi_key> <minus> <minus> : "−" # 2212 minus sign
+<Multi_key> <minus> <plus> : "∓" # 2213 minus-or-plus sign
+
+<Multi_key> <asterisk> <asterisk> : "∗" # 2217 asterisk operator
+
+<Multi_key> <s> <q> : "√" # 221A square root
+<Multi_key> <c> <u> : "∛" # 221B cube root
+<Multi_key> <f> <o> : "∜" # 221C fourth root
+<Multi_key> <p> <r> : "∝" # 221D proportional to
+<Multi_key> <8> <8> : "∞" # 221E infinity
+<Multi_key> <bar> <underscore> : "∟" # 221F right angle
+<Multi_key> <a> <n> : "∠" # 2220 angle
+
+<Multi_key> <bar> <bar> : "∥" # 2225 parallel to
+
+<Multi_key> <1> <plus> : "∫" # 222B integral
+<Multi_key> <2> <plus> : "∬" # 222C double integral
+<Multi_key> <3> <plus> : "∭" # 222D triple integral
+<Multi_key> <c> <plus> : "∮" # 222E contour integral
+<Multi_key> <s> <plus> : "∯" # 222F surface integral
+<Multi_key> <v> <plus> : "∰" # 2230 volume integral
+
+<Multi_key> <colon> <colon> : "∷" # 2237 proportion
+
+<Multi_key> <asciitilde> <equal> : "≅" # 2245 approximately equal to
+
+<Multi_key> <asciitilde> <asciitilde> : "≈" # 2248 almost equal to
+
+<Multi_key> <slash> <equal> : "≠" # 2260 not equal to
+<Multi_key> <equal> <equal> : "≡" # 2261 identical to
+
+<Multi_key> <less> <equal> : "≤" # 2264 less-than or equal to
+<Multi_key> <greater> <equal> : "≥" # 2265 greater-than or equal to
+
+<Multi_key> <less> <less> : "≪" # 226A much less than
+<Multi_key> <greater> <greater> : "≫" # 226B much greater than
+
+#<Multi_key> <underscore> <s> : "⊂" # 2282 subset of
+#<Multi_key> <asciicircum> <s> : "⊃" # 2283 superset of
+
+<Multi_key> <period> <bar> : "⋮" # 22EE vertical ellipsis
+<Multi_key> <period> <minus> : "⋯" # 22EF midline horizontal ellipsis
+<Multi_key> <period> <slash> : "⋰" # 22F0 up right diagonal ellipsis
+<Multi_key> <period> <backslash> : "⋱" # 22F1 down right diagonal ellipsis
+
+<Multi_key> <c> <m> : "⌘" # 2318 command key
+
+<Multi_key> <o> <p> : "⌥" # 2325 option key
+
+<Multi_key> <s> <t> : "★" # 2605 black star
+<Multi_key> <S> <T> : "☆" # 2606 white star
+
+<Multi_key> <p> <h> : "☎" # 260E black telephone
+
+<Multi_key> <colon> <parenleft> : "☹" # 2639 sad face
+<Multi_key> <colon> <parenright> : "☺" # 263A smiley face
+
+<Multi_key> <f> <e> : "♀" # 2640 sign of venus
+<Multi_key> <m> <a> : "♂" # 2642 sign of mars
+
+<Multi_key> <s> <p> : "♠" # 2660 spade suit
+<Multi_key> <c> <l> : "♣" # 2663 club suit
+<Multi_key> <less> <3> : "♥" # 2665 heart suit
+<Multi_key> <d> <i> : "♦" # 2666 diamond suit
+
+<Multi_key> <3> <r> : "♺" # 267A recycling symbol
+
+<Multi_key> <at> <at> : "⚛" # 269B atom symbol
+
+<Multi_key> <x> <n> : "⨉" # 2A09 n-ary times operator
+
+<Multi_key> <4> <plus> : "⨌" # 2A0C quadruple integral operator
+
+<Multi_key> <x> <c> : "⨯" # 2A2F vector or cross product
+
+<Multi_key> <F> <D> : "�" # FFFD replacement character
