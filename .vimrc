@@ -51,7 +51,6 @@ nnoremap <leader>m :-1read $HOME/.vim/snippets/bibtex/movie<CR>jf,i
 nnoremap <leader>yam :-1read $HOME/.vim/snippets/markdown_yaml<CR>
 nnoremap <leader>neo :-1read $HOME/.vim/snippets/neocities_post.html<CR>/title<CR>f>a
 nnoremap <leader>h :-1read $HOME/.vim/snippets/html<CR>/title<CR>f>a
-nnoremap <leader>sq :-1read $HOME/.vim/snippets/squiggles<CR>
 
 " markdown
 augroup filetype_markdown
