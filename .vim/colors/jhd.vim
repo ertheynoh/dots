@@ -2,7 +2,7 @@
 "
 " act like t_Co=0 but use (256) color on just a few things
 "
-" my version of 'jcs.vim'
+" fork of 'jcs.vim'
 " https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim
 
 set background=light
@@ -48,7 +48,7 @@ hi Statement		cterm=bold		ctermfg=NONE
 hi StatusLine		cterm=bold,reverse	ctermfg=NONE
 hi StatusLineNC		cterm=reverse		ctermfg=NONE
 hi TabLine		cterm=reverse		ctermfg=NONE	ctermbg=NONE
-hi Title		cterm=NONE		ctermfg=NONE
+hi Title		cterm=bold,underline	ctermfg=NONE
 hi Todo			cterm=bold,standout	ctermfg=185	ctermbg=0
 hi Type			cterm=bold		ctermfg=NONE
 hi Underlined		cterm=underline		ctermfg=NONE
