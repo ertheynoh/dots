@@ -3,17 +3,16 @@
 # applications menu
 command xterm xterm 
 command files xfe
-command web firefox
-command mail thunderbird
-command nvi 'xterm -e nvi'
-command cmus "xterm -bg black -fg white -g +427+15 -g 104x33 -e cmus"
+command firefox firefox
+command thunderbird thunderbird
+command dictionary gnome-dictionary
+command tunes "xterm -bg black -fg white -g +427+15 -g 104x33 -e cmus"
+command rss "xterm -bg black -fg white -e newsboat"
 command keepass keepassxc
 command syncthing syncthing
 command gnucash gnucash
-command darktable darktable
-command gimp gimp
 command nicotine nicotine
-command tag puddletag
+command puddletag puddletag
 command torrent qbittorrent 
 command xcalc "xcalc -stipple"
 command xlock "xlock -mode euler2d"
@@ -41,6 +40,8 @@ bind-key 4-z 'sct 3500'
 bind-key 4-Z 'sct 2500'
 bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
+bind-key 4-d gnome-dictionary
+bind-key 4-u "xterm -e tmux"
 
 ## group management
 bind-key M-1 group-only-1
