@@ -18,18 +18,21 @@ command xcalc "xcalc -stipple"
 command xlock "xlock -mode euler2d"
 
 # window behavior
-gap 15 0 0 0
+gap 15 4 0 0
 sticky yes
 ignore "xconsole"
 autogroup 0 xconsole,XConsole
+ignore "xeyes" 
+autogroup 0 xeyes,XEyes
 snapdist 7
 fontname "Inter"
 color menubg "powder blue"
+color activeborder "powder blue"
 
 # keybindings
 
 ## application shortcuts
-bind-key 4-t "xterm -bg black -fg white"
+bind-key 4-t "xterm -bg midnightblue -fg gray"
 bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
