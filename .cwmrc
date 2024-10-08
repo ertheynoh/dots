@@ -46,6 +46,7 @@ bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
 bind-key 4-d gnome-dictionary
 bind-key 4-u "xterm -e tmux"
+bind-key 4-T "xterm -bg midnightblue -fg gray -e tmux"
 
 ## group management
 bind-key M-1 group-only-1

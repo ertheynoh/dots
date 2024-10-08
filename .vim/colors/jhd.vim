@@ -1,9 +1,7 @@
-" vim:sw=8:ts=8
+" this is a modified version of 'jcs.vim'
+" ~ https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim ~
 "
-" act like t_Co=0 but use (256) color on just a few things
-"
-" fork of 'jcs.vim'
-" https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim
+" barely a colorscheme
 
 set background=light 
 
@@ -42,6 +40,7 @@ hi Search		cterm=reverse		ctermfg=NONE
 hi SignColumn		cterm=NONE		ctermfg=NONE	ctermbg=NONE
 hi SpellBad		cterm=NONE		ctermfg=0	ctermbg=224
 hi SpellLocal		cterm=NONE		ctermfg=0	ctermbg=223
+hi SpellCap		cterm=NONE		ctermfg=0	ctermbg=158
 hi Special		cterm=bold		ctermfg=NONE
 hi SpecialKey		cterm=bold		ctermfg=NONE
 hi Statement		cterm=bold		ctermfg=NONE
