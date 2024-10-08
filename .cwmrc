@@ -41,6 +41,7 @@ bind-key 4-p keepassxc
 bind-key 4-n "xcalc -stipple"
 bind-key 4-z 'sct 3500'
 bind-key 4-Z 'sct 2500'
+bind-key 4-X 'sct 1500'
 bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
 bind-key 4-d gnome-dictionary

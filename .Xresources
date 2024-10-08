@@ -28,4 +28,4 @@ XTerm*background: lemonchiffon
 XTerm*foreground: black
 
 ! mouse
-allowMouseOps: on
+xterm*allowMouseOps: true

@@ -16,6 +16,7 @@ set encoding=UTF-8
 set noswapfile
 set backspace=indent,eol,start
 set wildmenu
+set mouse=a
 set t_Co=256
 set textwidth=80
 colorscheme jhd 

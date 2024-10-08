@@ -5,7 +5,7 @@
 " fork of 'jcs.vim'
 " https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim
 
-set background=light
+set background=light 
 
 hi clear
 if exists("syntax_on")
@@ -22,26 +22,26 @@ hi DiffChange		cterm=bold		ctermfg=NONE
 hi DiffDelete		cterm=bold		ctermfg=NONE
 hi DiffText		cterm=reverse		ctermfg=NONE
 hi Directory		cterm=bold		ctermfg=NONE
-hi Error		cterm=NONE		ctermfg=NONE	ctermbg=224
-hi ErrorMsg		cterm=NONE		ctermfg=NONE	ctermbg=224
+hi Error		cterm=NONE		ctermfg=0	ctermbg=224
+hi ErrorMsg		cterm=NONE		ctermfg=0	ctermbg=224
 hi FoldColumn		cterm=standout		ctermfg=NONE
-hi Folded		cterm=standout		ctermfg=NONE
+hi Folded		cterm=standout		ctermfg=NONE 
 hi Identifier		cterm=NONE		ctermfg=NONE
 hi Ignore		cterm=bold		ctermfg=NONE
 hi IncSearch		cterm=reverse		ctermfg=NONE
 hi LineNr		cterm=NONE		ctermfg=248
-hi MatchParen		cterm=bold		ctermfg=none	ctermbg=158
+hi MatchParen		cterm=bold		ctermfg=0	ctermbg=158
 hi ModeMsg		cterm=bold		ctermfg=NONE
 hi MoreMsg		cterm=bold		ctermfg=NONE
 hi NonText		cterm=bold		ctermfg=NONE
 hi PreProc		cterm=NONE		ctermfg=NONE
-hi Pmenu		cterm=NONE		ctermfg=NONE	ctermbg=253
-hi PmenuSel		cterm=bold		ctermfg=NONE	ctermbg=253
+hi Pmenu		cterm=NONE		ctermfg=0	ctermbg=158
+hi PmenuSel		cterm=bold		ctermfg=0	ctermbg=253
 hi Question		cterm=standout		ctermfg=NONE
 hi Search		cterm=reverse		ctermfg=NONE
 hi SignColumn		cterm=NONE		ctermfg=NONE	ctermbg=NONE
 hi SpellBad		cterm=NONE		ctermfg=0	ctermbg=224
-hi SpellLocal		cterm=NONE		ctermfg=NONE	ctermbg=223
+hi SpellLocal		cterm=NONE		ctermfg=0	ctermbg=223
 hi Special		cterm=bold		ctermfg=NONE
 hi SpecialKey		cterm=bold		ctermfg=NONE
 hi Statement		cterm=bold		ctermfg=NONE
@@ -56,9 +56,9 @@ hi VertSplit		cterm=reverse		ctermfg=NONE
 hi Visual		cterm=reverse		ctermfg=NONE	ctermbg=NONE
 hi VisualNOS		cterm=bold,underline	ctermfg=NONE
 hi WarningMsg		cterm=standout		ctermfg=NONE
-hi WildMenu		cterm=standout		ctermfg=NONE
+hi WildMenu		cterm=standout		ctermfg=NONE	
 
-hi ColorColumn		cterm=NONE		ctermfg=NONE	ctermbg=252
+hi ColorColumn		cterm=NONE		ctermfg=0	ctermbg=252
 
 " for highlighting stray spaces/tabs (requires match statements in vimrc)
 hi ExtraWhitespace	cterm=reverse		ctermfg=185	ctermbg=NONE
