@@ -7,9 +7,9 @@ export GTK_IM_MODULE="xim"
 export LESSCHARSET="UTF-8"
 
 # enable scrolling with trackpoint and middle button
-xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1
-xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Button" 2
-xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Axes" 6 7 4 5
+# xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1
+# xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Button" 2
+# xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Axes" 6 7 4 5
 
 xset b off
 /home/jacqueline/bin/statusbar.sh | lemonbar -p -d &

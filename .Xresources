@@ -26,6 +26,3 @@ XTerm.vt100.translations: #override \n\
 XTerm*cursorColor: #5FB3B3
 XTerm*background: lemonchiffon 
 XTerm*foreground: black
-
-! mouse
-xterm*allowMouseOps: true

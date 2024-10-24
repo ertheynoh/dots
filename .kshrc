@@ -12,7 +12,6 @@ alias ls="ls -F"
 alias l="ls -F"
 alias ll="ls -Fal"
 alias df="df -h"
-alias ..="cd .."
 alias c="cd .."
 alias dd="clear"
 alias :q="exit"
@@ -26,5 +25,3 @@ alias sp="dict -d fd-spa-eng"
 alias spa="dict -d fd-spa-eng"
 alias ger="dict -d fd-deu-eng"
 alias deu="dict -d fd-deu-eng"
-
-alias "wombyn"=man

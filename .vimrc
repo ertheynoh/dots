@@ -16,7 +16,6 @@ set encoding=UTF-8
 set noswapfile
 set backspace=indent,eol,start
 set wildmenu
-set mouse=a
 set t_Co=256
 set textwidth=80
 colorscheme jhd 
@@ -29,10 +28,8 @@ set path +=**
 let g:netrw_banner=0 
 
 " key bindings
-map <leader>x :syntax 
 map <leader>p gwap
 map Y y$
-map <leader>doc :! pandoc % ~/metadata.yaml --reference-doc ~/writer_template.dotx -t docx -o 
 
 " file explorer
 map <leader>n :Vexplore<CR>
@@ -57,7 +54,6 @@ nnoremap <leader>h :-1read $HOME/.vim/snippets/html<CR>/title<CR>f>a
 augroup filetype_markdown
     autocmd!
     autocmd Filetype markdown :NoMatchParen
-    autocmd Filetype markdown :set spell
 augroup END
 
 " html
