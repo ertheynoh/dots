@@ -6,13 +6,10 @@ command files xfe
 command firefox firefox
 command thunderbird thunderbird
 command dictionary gnome-dictionary
-command tunes "xterm -bg black -fg white -g +427+15 -g 104x33 -e cmus"
-command rss "xterm -bg midnightblue -fg gray -g +243+17 -g 131x33 -e newsboat"
 command keepass keepassxc
 command syncthing syncthing
 command gnucash gnucash
 command nicotine nicotine
-command puddletag puddletag
 command torrent qbittorrent 
 command xcalc "xcalc -stipple"
 command xlock "xlock -mode euler2d"
@@ -22,8 +19,6 @@ gap 17 4 0 0
 sticky yes
 ignore "xconsole"
 autogroup 0 xconsole,XConsole
-ignore "xeyes" 
-autogroup 0 xeyes,XEyes
 snapdist 7
 fontname "Inter"
 color menubg "powder blue"
