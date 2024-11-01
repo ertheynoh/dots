@@ -24,5 +24,7 @@ XTerm.vt100.translations: #override \n\
 
 ! colors
 XTerm*cursorColor: #5FB3B3
-XTerm*background: lemonchiffon 
-XTerm*foreground: black
+! XTerm*background: lemonchiffon 
+! XTerm*foreground: black
+XTerm*background: midnightblue
+XTerm*foreground: grey

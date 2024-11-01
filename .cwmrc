@@ -27,7 +27,7 @@ color activeborder "rebecca purple"
 # keybindings
 
 ## application shortcuts
-bind-key 4-t "xterm -bg midnightblue -fg gray"
+bind-key 4-t "xterm -bg lemonchiffon -fg black"
 bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
