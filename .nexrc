@@ -12,4 +12,3 @@ set wraplen=80
 map gg 1G
 map gF :%!fmt -w 80
 map \p :?^$?,//!fmt -pw 80
-map \7 :?^$?,//!fmt -pw 72
