@@ -1,11 +1,5 @@
 #
-# Default twm configuration file; needs to be kept small to conserve string
-# space in systems whose compilers don't handle medium-sized strings.
-#
-# Sites should tailor this file, providing any extra title buttons, menus, etc.
-# that may be appropriate for their environment.  For example, if most of the
-# users were accustomed to uwm, the defaults could be set up not to decorate
-# any windows and to use meta-keys.
+# twm configuration file
 #
 
 NoGrabServer
@@ -72,7 +66,7 @@ menu "defops"
 "xterm"         !"xterm &"
 "xfe"		!"xfe &"
 "firefox"	!"firefox &"
-"mail"		!"thunderbird &"
+"thunderbird"	!"thunderbird &"
 "dictionary"	!"gnome-dictionary &"
 "xclock"	!"xclock -render &"
 "xeyes"		!"xeyes -biblicallyAccurate &"
@@ -98,11 +92,8 @@ menu "Utilities"
 "Xmag"		!"xmag &"
 "Editres"	!"editres &"
 ""		f.nop
-#"XEmacs"	!"xemacs &"
-#"Mail"		!"xmh -font fixed &"
-#""		f.nop
 "XLock"		!"xlock -mode random &"
-"Reset X defaults" !"xrdb -load $HOME/.Xdefaults"
+"Reset X defaults" !"xrdb -load $HOME/.Xresources"
 }
 
 menu "Window Ops"
@@ -126,9 +117,6 @@ menu "Restart"
 "twm"		f.startwm "twm"
 "fvwm"		f.startwm "fvwm"
 "cwm"		f.startwm "cwm"
-"wm2"		f.startwm "wm2"
-"ctwm"		f.startwm "ctwm"
-"mwm"		f.startwm "mwm"
 ""		f.nop
 "dummy"		f.startwm "xterm"
 }
