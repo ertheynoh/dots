@@ -7,7 +7,6 @@ export LC_CTYPE=en_US.UTF-8
 HISTFILE=$HOME/.ksh_history
 HISTSIZE=20000
 
-alias forecast="curl http://wttr.in"
 alias ls="ls -F"
 alias l="ls -F"
 alias ll="ls -Fal"
@@ -16,12 +15,8 @@ alias c="cd .."
 alias dd="clear"
 alias :q="exit"
 
-alias clock="xclock -render"
-alias eyes="xeyes -biblicallyAccurate"
-
 alias nethack="nethack-3.6.6"
 alias weather="ansiweather -l chicago -u imperial"
-alias neocities="neocities32"
 
 alias fr="dict -d fd-fra-eng"
 alias sp="dict -d fd-spa-eng"
