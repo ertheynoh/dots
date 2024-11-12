@@ -16,6 +16,9 @@ alias c="cd .."
 alias dd="clear"
 alias :q="exit"
 
+alias clock="xclock -render"
+alias eyes="xeyes -biblicallyAccurate"
+
 alias nethack="nethack-3.6.6"
 alias weather="ansiweather -l chicago -u imperial"
 alias neocities="neocities32"

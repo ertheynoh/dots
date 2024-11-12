@@ -7,6 +7,8 @@ set wrap
 set ruler
 set tabstop=8
 set softtabstop=4
+set shiftwidth=4
+set noexpandtab
 set autoindent
 set lazyredraw
 set ttyfast
@@ -19,7 +21,7 @@ set wildmenu
 set t_Co=256
 set textwidth=80
 colorscheme jhd 
-syntax on
+syntax off
 
 " fuzzy :find
 set path +=**
@@ -30,10 +32,6 @@ let g:netrw_banner=0
 " key bindings
 map <leader>p gwap
 map Y y$
-
-" file explorer
-map <leader>n :Vexplore<CR>
-map <leader>t :Texplore<CR>
 
 " snippets
 
@@ -46,6 +44,7 @@ nnoremap <leader>mv :-1read $HOME/.vim/snippets/bibtex/mvbook<CR>jf,i
 nnoremap <leader>bkv :-1read $HOME/.vim/snippets/bibtex/mvbook_volume<CR>jf,i
 nnoremap <leader>m :-1read $HOME/.vim/snippets/bibtex/movie<CR>jf,i
 
+" other snippets
 nnoremap <leader>yam :-1read $HOME/.vim/snippets/markdown_yaml<CR>
 nnoremap <leader>neo :-1read $HOME/.vim/snippets/neocities_post.html<CR>/title<CR>f>a
 nnoremap <leader>h :-1read $HOME/.vim/snippets/html<CR>/title<CR>f>a
@@ -54,26 +53,13 @@ nnoremap <leader>h :-1read $HOME/.vim/snippets/html<CR>/title<CR>f>a
 augroup filetype_markdown
     autocmd!
     autocmd Filetype markdown :NoMatchParen
+    autocmd Filetype markdown :syntax on
 augroup END
 
 " html
 augroup filetype_html
     autocmd!
-    autocmd Filetype html setlocal softtabstop=2
     autocmd Filetype html imap <leader>c i<!-- --><ESC>Bi
-    autocmd Filetype html map ] /<<CR>
-    autocmd Filetype html map [ ?<<CR>
-augroup END
-
-" css
-augroup filetype_css
-    autocmd!
-    autocmd Filetype css setlocal softtabstop=2
-augroup END
-
-" latex
-augroup filetype_tex
-    autocmd!
-    autocmd Filetype tex setlocal tabstop=2
-    autocmd Filetype tex map <leader>l :!pdflatex %<CR>
+    autocmd Filetype html map ] /<[a-z]<CR>
+    autocmd Filetype html map [ ?<[a-z]<CR>
 augroup END

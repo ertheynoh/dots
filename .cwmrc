@@ -13,6 +13,7 @@ command nicotine nicotine
 command torrent qbittorrent 
 command xcalc "xcalc -stipple"
 command xlock "xlock -mode euler2d"
+command top "xterm -e top"
 
 # window behavior
 gap 17 4 0 0
@@ -31,7 +32,7 @@ bind-key 4-t "xterm -bg lemonchiffon -fg black"
 bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
-bind-key 4-c "xterm -bg black -fg white -g +427+15 -g 104x33 -e cmus"
+bind-key 4-c "xterm -bg midnightblue -fg grey -g +427+15 -g 104x33 -e cmus"
 bind-key 4-p keepassxc
 bind-key 4-n "xcalc -stipple"
 bind-key 4-z 'sct 3500'
@@ -41,7 +42,7 @@ bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
 bind-key 4-d gnome-dictionary
 bind-key 4-u "xterm -e tmux"
-bind-key 4-T "xterm -bg midnightblue -fg gray -e tmux"
+bind-key 4-T "xterm -bg lemonchiffon -fg black -e tmux"
 
 ## group management
 bind-key M-1 group-only-1
