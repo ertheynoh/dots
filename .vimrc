@@ -26,16 +26,12 @@ syntax off
 " fuzzy :find
 set path +=**
 
-" no netrw banner
-let g:netrw_banner=0 
-
 " key bindings
 map <leader>p gwap
 map Y y$
 
 " snippets
 
-" biblatex snippets
 nnoremap <leader>bk :-1read $HOME/.vim/snippets/bibtex/book<CR>jf,i
 nnoremap <leader>ar :-1read $HOME/.vim/snippets/bibtex/article<CR>jf,i
 nnoremap <leader>bb :-1read $HOME/.vim/snippets/bibtex/inbook<CR>jf,i
@@ -44,7 +40,6 @@ nnoremap <leader>mv :-1read $HOME/.vim/snippets/bibtex/mvbook<CR>jf,i
 nnoremap <leader>bkv :-1read $HOME/.vim/snippets/bibtex/mvbook_volume<CR>jf,i
 nnoremap <leader>m :-1read $HOME/.vim/snippets/bibtex/movie<CR>jf,i
 
-" other snippets
 nnoremap <leader>yam :-1read $HOME/.vim/snippets/markdown_yaml<CR>
 nnoremap <leader>neo :-1read $HOME/.vim/snippets/neocities_post.html<CR>/title<CR>f>a
 nnoremap <leader>h :-1read $HOME/.vim/snippets/html<CR>/title<CR>f>a
