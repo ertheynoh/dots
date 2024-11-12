@@ -44,14 +44,14 @@ nnoremap <leader>yam :-1read $HOME/.vim/snippets/markdown_yaml<CR>
 nnoremap <leader>neo :-1read $HOME/.vim/snippets/neocities_post.html<CR>/title<CR>f>a
 nnoremap <leader>h :-1read $HOME/.vim/snippets/html<CR>/title<CR>f>a
 
-" markdown
+" .md files
 augroup filetype_markdown
     autocmd!
     autocmd Filetype markdown :NoMatchParen
     autocmd Filetype markdown :syntax on
 augroup END
 
-" html
+" .html files
 augroup filetype_html
     autocmd!
     autocmd Filetype html imap <leader>c i<!-- --><ESC>Bi
