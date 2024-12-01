@@ -7,6 +7,6 @@ set iclower
 set extended
 set wraplen=80
 
-map gg 1G
 map gF :%!fmt -w 80
-map \p :?^$?,//!fmt -pw 80
+map \m :-1read $HOME/pandoc/snippets/neocities_post.html
+map \p !{fmt -w 80

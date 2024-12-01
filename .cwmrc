@@ -3,23 +3,28 @@
 # applications menu
 command xterm xterm 
 command files xfe
-command firefox firefox
-command thunderbird thunderbird
-command dictionary gnome-dictionary
-command keepass keepassxc
-command syncthing syncthing
-command gnucash gnucash
-command nicotine nicotine
-command torrent qbittorrent 
-command xcalc "xcalc -stipple"
-command xlock "xlock -mode euler2d"
-command top "xterm -e top"
+command web firefox
+command mail thunderbird
+command pass keepassxc
+command dict gnome-dictionary
+command sync syncthing
+command nic nicotine
+command cash gnucash
+command calc "xcalc -stipple"
+command clock "xclock -bg floralwhite -geom 248x261+11+27"
+command "(>.>)" "xeyes -geom +34+910"
+command kill xkill
+command xlock "xlock -mode random"
 
 # window behavior
 gap 17 4 0 0
 sticky yes
 ignore "xconsole"
 autogroup 0 xconsole,XConsole
+ignore "xeyes"
+autogroup 0 xeyes,XEyes
+ignore "xclock"
+autogroup 0 xclock,XClock
 snapdist 7
 fontname "Inter"
 color menubg "powder blue"

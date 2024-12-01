@@ -21,7 +21,7 @@ set wildmenu
 set t_Co=256
 set textwidth=80
 colorscheme jhd 
-syntax off
+syntax on
 
 " fuzzy :find
 set path +=**
@@ -42,7 +42,6 @@ nnoremap <leader>neo :-1read $HOME/pandoc/snippets/neocities_post.html<CR>/title
 augroup filetype_markdown
     autocmd!
     autocmd Filetype markdown :NoMatchParen
-    autocmd Filetype markdown :syntax on
 augroup END
 
 " .html files

@@ -15,6 +15,8 @@ alias c="cd .."
 alias dd="clear"
 alias :q="exit"
 
+alias ed="ed -p~"
+
 alias nethack="nethack-3.6.6"
 alias weather="ansiweather -l chicago -u imperial"
 
