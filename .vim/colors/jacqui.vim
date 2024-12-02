@@ -11,11 +11,11 @@ let colors_name = "jacqui"
 
 hi Comment		cterm=NONE		ctermfg=NONE
 hi Constant		cterm=NONE		ctermfg=NONE
-hi String		cterm=none		ctermfg=NONE
+hi String		cterm=none		ctermfg=133
 hi Number		cterm=NONE		ctermfg=125
 hi Special		cterm=bold		ctermfg=NONE
 hi Identifier		cterm=NONE		ctermfg=NONE
-hi PreProc		cterm=NONE		ctermfg=NONE
+hi PreProc		cterm=NONE		ctermfg=137
 hi Statement		cterm=NONE		ctermfg=36
 hi Title		cterm=bold		ctermfg=NONE
 hi Type			cterm=NONE		ctermfg=31
