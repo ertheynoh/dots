@@ -1,3 +1,4 @@
+" nex/nvi settings
 set verbose
 set showmode
 set report=1
@@ -7,6 +8,12 @@ set iclower
 set extended
 set wraplen=80
 
-map gF :%!fmt -w 80
-map \m :-1read $HOME/pandoc/snippets/neocities_post.html
-map \p !{fmt -w 80
+" keybinds
+map Y y$
+map gg 1G
+
+" macros
+map \p !}fmt -w 80
+map \f :%!fmt -w 80
+
+map \n :-1read $HOME/pandoc/snippets/neocities_post.html

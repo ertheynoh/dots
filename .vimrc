@@ -20,8 +20,8 @@ colorscheme jacqui
 syntax on
 
 " key bindings
-map <leader>p gwap
+map \p gwap
 map Y y$
 
-"" neocities boilerplate
-nnoremap <leader>n :-1read $HOME/pandoc/snippets/neocities_post.html<CR>/title<CR>f>a
+" macros
+nnoremap \n :-1read $HOME/pandoc/snippets/neocities_post.html<CR>/title<CR>f>a

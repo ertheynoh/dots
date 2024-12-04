@@ -18,7 +18,7 @@ xrdb -merge $HOME/.Xresources
 ulimit -Sc 0
 
 xsetroot -solid darkslategrey &
-/home/jacqueline/bin/statusbar.sh | lemonbar -p -d &
+$HOME/bin/statusbar.sh | lemonbar -p -d &
 xbattbar -t 1 -I darkseagreen -i slategrey &
 xidle -delay 5 -program "/usr/X11R6/bin/xlock -mode random" -timeout 1200 &
 
