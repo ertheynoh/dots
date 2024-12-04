@@ -1,1 +1,1 @@
-openbsd dotfiles
+dotfiles
