@@ -24,4 +24,4 @@ map \p gwap
 map Y y$
 
 " macros
-nnoremap \n :-1read $HOME/pandoc/snippets/neocities_post.html<CR>/title<CR>f>a
+map \n :-1read $HOME/pandoc/snippets/neocities_post.html<CR>/title<CR>f>a
