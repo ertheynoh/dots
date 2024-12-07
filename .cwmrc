@@ -2,6 +2,7 @@
 
 # applications menu
 command xterm xterm 
+command sam sam
 command files xfe
 command web firefox
 command mail thunderbird
@@ -33,7 +34,7 @@ color activeborder "rebecca purple"
 # keybindings
 
 ## application shortcuts
-bind-key 4-t "xterm -bg lemonchiffon -fg black"
+bind-key 4-t "xterm -bg midnightblue -fg grey"
 bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
@@ -46,8 +47,6 @@ bind-key 4-X 'sct 1500'
 bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
 bind-key 4-d gnome-dictionary
-bind-key 4-u "xterm -e tmux"
-bind-key 4-T "xterm -bg lemonchiffon -fg black -e tmux"
 
 ## group management
 bind-key M-1 group-only-1
