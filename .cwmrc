@@ -2,17 +2,13 @@
 
 # applications menu
 command xterm xterm 
-command sam sam
 command files xfe
 command web firefox
 command mail thunderbird
 command pass keepassxc
 command dict gnome-dictionary
-command sync syncthing
-command nic nicotine
-command cash gnucash
 command calc "xcalc -stipple"
-command clock "xclock -bg floralwhite -geom 248x261+11+27"
+command clock "xclock -bg cornsilk -geom 248x261+11+27"
 command "(>.>)" "xeyes -geom +34+910"
 command kill xkill
 command xlock "xlock -mode random"
@@ -34,11 +30,11 @@ color activeborder "rebecca purple"
 # keybindings
 
 ## application shortcuts
-bind-key 4-t "xterm -bg midnightblue -fg grey"
+bind-key 4-t "xterm -bg lavender -fg black"
 bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
-bind-key 4-c "xterm -bg midnightblue -fg grey -g +427+15 -g 104x33 -e cmus"
+bind-key 4-c "xterm -bg lavender -fg black -g +427+15 -g 104x33 -e cmus"
 bind-key 4-p keepassxc
 bind-key 4-n "xcalc -stipple"
 bind-key 4-z 'sct 3500'
@@ -47,6 +43,7 @@ bind-key 4-X 'sct 1500'
 bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
 bind-key 4-d gnome-dictionary
+bind-key 4-C "xclock -bg cornsilk -geom 248x261+11+27"
 
 ## group management
 bind-key M-1 group-only-1

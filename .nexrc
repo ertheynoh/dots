@@ -1,7 +1,6 @@
 " nex/nvi settings
 set verbose
 set showmode
-set report=1
 set ruler
 set autoindent
 set iclower
@@ -16,6 +15,5 @@ map gg 1G
 " macros
 map \p !}fmt -w 80
 map \f :%!fmt -w 80
-
-map \n :-1read $HOME/pandoc/snippets/neocities_post.html
-map \me :!groff -k -me % > 
+map \d :r !date '+\%Y-\%m-\%d'
+map \h :-1read $HOME/pandoc/snippets/neocities_post.html/titlef>a
