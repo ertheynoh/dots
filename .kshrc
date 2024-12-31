@@ -16,9 +16,10 @@ alias dd="clear"
 alias :q="exit"
 
 alias ed="ed -p~"
-
+alias scheme="gsi"
 alias nethack="nethack-3.6.6"
 alias weather="ansiweather -l chicago -u imperial"
+alias lite="lite-xl &"
 
 alias fr="dict -d fd-fra-eng"
 alias sp="dict -d fd-spa-eng"

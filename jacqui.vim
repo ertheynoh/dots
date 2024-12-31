@@ -15,9 +15,9 @@ hi Number		cterm=NONE		ctermfg=166
 hi Special		cterm=bold		ctermfg=NONE
 hi Identifier		cterm=NONE		ctermfg=NONE
 hi PreProc		cterm=NONE		ctermfg=NONE
-hi Statement		cterm=NONE		ctermfg=36
+hi Statement		cterm=NONE		ctermfg=26
 hi Title		cterm=bold		ctermfg=NONE
-hi Type			cterm=NONE		ctermfg=31
+hi Type			cterm=NONE		ctermfg=28
 hi Underlined		cterm=underline		ctermfg=NONE
 hi htmlItalic		cterm=italic		ctermfg=NONE
 hi htmlBold		cterm=bold		ctermfg=NONE

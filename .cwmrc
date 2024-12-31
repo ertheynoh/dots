@@ -5,16 +5,14 @@ command xterm xterm
 command files xfe
 command web firefox
 command mail thunderbird
-command pass keepassxc
-command dict gnome-dictionary
 command calc "xcalc -stipple"
 command clock "xclock -bg cornsilk -geom 248x261+11+27"
 command "(>.>)" "xeyes -geom +34+910"
 command kill xkill
-command xlock "xlock -mode random"
+command xlock xlock
 
 # window behavior
-gap 17 4 0 0
+gap 17 3 0 0
 sticky yes
 ignore "xconsole"
 autogroup 0 xconsole,XConsole
@@ -30,7 +28,7 @@ color activeborder "rebecca purple"
 # keybindings
 
 ## application shortcuts
-bind-key 4-t "xterm -bg lavender -fg black"
+bind-key 4-t "xterm -bg lemonchiffon -fg black"
 bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
@@ -44,6 +42,7 @@ bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
 bind-key 4-d gnome-dictionary
 bind-key 4-C "xclock -bg cornsilk -geom 248x261+11+27"
+bind-key 4-e "xeyes -geom +34+910"
 
 ## group management
 bind-key M-1 group-only-1

@@ -1,19 +1,26 @@
-" nex/nvi settings
+" nexrc
 set verbose
 set showmode
 set ruler
 set autoindent
 set iclower
 set wraplen=80
+set showmatch
+
+" tab for command history editing and filename completion
 set cedit=\	
 set filec=\	
-
-" keybinds
-map Y y$
-map gg 1G
 
 " macros
 map \p !}fmt -w 80
 map \f :%!fmt -w 80
 map \d :r !date '+\%Y-\%m-\%d'
+
+"" neocities html boilerplate
 map \h :-1read $HOME/pandoc/snippets/neocities_post.html/titlef>a
+
+"" copy current paragraph, marked selection ("a), or line to tmux pane 1 
+"" i.e., send code to interpreter without leaving vi :)
+map cc {j^ma}k$:'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
+map cs :'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
+map cl :. w ! cat | tmux loadb - && tmux pasteb -t .1

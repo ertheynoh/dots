@@ -12,9 +12,9 @@ setxkbmap -option compose:ralt
 xrdb -merge $HOME/.Xresources
 ulimit -Sc 0
 
-xsetroot -def &
+xwallpaper --stretch $HOME/pictures/macOS_wallpapers/Leaves.jpg &
 $HOME/bin/statusbar.sh | lemonbar -p -d &
 xbattbar -t 2 -I darkseagreen -i slategrey &
-xidle -delay 5 -program -sw "/usr/X11R6/bin/xlock" -timeout 1200 &
+xidle -timeout 1200 &
 
 exec cwm
