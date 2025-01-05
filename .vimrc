@@ -20,14 +20,16 @@ syntax on
 " key bindings
 map \p gwap
 map Y y$
+map \t :Texplore<CR>
 
 " macros
 
 "" neocities html boilerplate
 map \n :-1read $HOME/pandoc/snippets/neocities_post.html<CR>/title<CR>f>a
 
-"" copy current paragraph, vmode selection, or line to tmux pane 1
-"" i.e. send code to interpreter without leaving vim :)
-map cc vip:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
-map cs :w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
-map cl V:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
+"" copy current paragraph, visual mode selection, or line to tmux pane 1
+"" for sending code to an interpreter without leaving vim :)
+map mm vip:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
+map mf :w \| !tmux loadb % && tmux pasteb -t .1<CR><CR>
+map ms :w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
+map ml V:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>

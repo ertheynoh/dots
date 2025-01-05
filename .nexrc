@@ -11,16 +11,22 @@ set showmatch
 set cedit=\	
 set filec=\	
 
-" macros
+map Y y$
+map gg 1G
 map \p !}fmt -w 80
 map \f :%!fmt -w 80
 map \d :r !date '+\%Y-\%m-\%d'
+map \s :!spell %
+map \= :.t.:s/./=/g
+map \- :.t.:s/./-/g
+map \3 I### A ###
 
-"" neocities html boilerplate
+" neocities html boilerplate
 map \h :-1read $HOME/pandoc/snippets/neocities_post.html/titlef>a
 
-"" copy current paragraph, marked selection ("a), or line to tmux pane 1 
-"" i.e., send code to interpreter without leaving vi :)
-map cc {j^ma}k$:'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
-map cs :'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
-map cl :. w ! cat | tmux loadb - && tmux pasteb -t .1
+" copy current paragraph, file, marked selection ("a), or line to tmux pane 1 
+" for running code through an interpreter without leaving vi :)
+map mm {j^ma}k$:'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
+map mf :w | !tmux loadb % && tmux pasteb -t .1
+map ms :'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
+map ml :. w ! cat | tmux loadb - && tmux pasteb -t .1

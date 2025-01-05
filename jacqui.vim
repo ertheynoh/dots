@@ -13,8 +13,9 @@ hi Constant		cterm=NONE		ctermfg=NONE
 hi String		cterm=none		ctermfg=133
 hi Number		cterm=NONE		ctermfg=166
 hi Special		cterm=bold		ctermfg=NONE
-hi Identifier		cterm=NONE		ctermfg=NONE
-hi PreProc		cterm=NONE		ctermfg=NONE
+hi Identifier		cterm=NONE		ctermfg=20
+hi Function		cterm=none		ctermfg=19
+hi PreProc		cterm=bold		ctermfg=NONE
 hi Statement		cterm=NONE		ctermfg=26
 hi Title		cterm=bold		ctermfg=NONE
 hi Type			cterm=NONE		ctermfg=28
