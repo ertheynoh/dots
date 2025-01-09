@@ -6,6 +6,8 @@ set belloff=all
 set wrap
 set ruler
 set tabstop=8
+set softtabstop=4
+set shiftwidth=4
 set autoindent
 set nojoinspaces
 set encoding=UTF-8
