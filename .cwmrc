@@ -33,14 +33,12 @@ bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
 bind-key 4-c "xterm -bg lavender -fg black -g +427+15 -g 104x33 -e cmus"
-bind-key 4-p keepassxc
 bind-key 4-n "xcalc -stipple"
 bind-key 4-z 'sct 3500'
 bind-key 4-Z 'sct 2500'
 bind-key 4-X 'sct 1500'
 bind-key 4M-x xkill
 bind-key 4-x 'scrot -u'
-bind-key 4-d gnome-dictionary
 bind-key 4-C "xclock -bg cornsilk -geom 248x261+11+27"
 bind-key 4-e "xeyes -geom +34+910"
 
