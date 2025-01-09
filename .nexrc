@@ -20,9 +20,10 @@ map \s :!spell %
 map \= :.t.:s/./=/g
 map \- :.t.:s/./-/g
 map \3 I### A ###
+map \4 I#### A ####
 
 " neocities html boilerplate
-map \h :-1read $HOME/pandoc/snippets/neocities_post.html/titlef>a
+map \n :-1read $HOME/pandoc/snippets/neocities_post.html/titlef>a
 
 " copy current paragraph, file, marked selection ("a), or line to tmux pane 1 
 " for running code through an interpreter without leaving vi :)

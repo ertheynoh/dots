@@ -14,6 +14,7 @@ set backspace=indent,eol,start
 set wildmenu
 set t_Co=256
 set textwidth=80
+set cedit=<Tab>
 colorscheme jacqui
 syntax on
 
@@ -21,6 +22,12 @@ syntax on
 map \p gwap
 map Y y$
 map \t :Texplore<CR>
+map \d :r !date '+\%Y-\%m-\%d'<CR>
+map \= :.t.<CR>:s/./=/g<CR>
+map \- :.t.<CR>:s/./-/g<CR>
+map \3 I### <ESC>A ###<ESC><CR>
+map \4 I#### <ESC>A ####<ESC><CR>
+
 
 " macros
 

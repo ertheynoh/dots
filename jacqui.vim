@@ -1,5 +1,6 @@
 " jacqui's colors
-" tested on xterm backgrounds "midnightblue" and "lemonchiffon" :^)
+" doesn't specify background; i use it with "lavender" or "lemonchiffon" as my
+" xterm background color
 
 hi clear
 if exists("syntax_on")
@@ -9,13 +10,12 @@ endif
 let colors_name = "jacqui"
 
 hi Comment		cterm=NONE		ctermfg=NONE
-hi Constant		cterm=NONE		ctermfg=NONE
-hi String		cterm=none		ctermfg=133
-hi Number		cterm=NONE		ctermfg=166
+hi Constant		cterm=bold		ctermfg=96
+hi String		cterm=none		ctermfg=98
 hi Special		cterm=bold		ctermfg=NONE
 hi Identifier		cterm=NONE		ctermfg=20
-hi Function		cterm=none		ctermfg=19
-hi PreProc		cterm=bold		ctermfg=NONE
+hi Function		cterm=none		ctermfg=23
+hi PreProc		cterm=none		ctermfg=239
 hi Statement		cterm=NONE		ctermfg=26
 hi Title		cterm=bold		ctermfg=NONE
 hi Type			cterm=NONE		ctermfg=28
@@ -25,4 +25,5 @@ hi htmlBold		cterm=bold		ctermfg=NONE
 hi htmlBoldUnderline	cterm=bold,underline	ctermfg=NONE
 hi htmlBoldUnderlineItalic  cterm=bold,underline,italic	    ctermfg=NONE
 hi VertSplit		cterm=reverse		ctermfg=NONE
-hi Visual		cterm=reverse		ctermfg=130	ctermbg=NONE
+hi Visual		cterm=reverse		ctermfg=183	ctermbg=0
+hi Error		cterm=none		ctermfg=0
