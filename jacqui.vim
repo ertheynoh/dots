@@ -1,6 +1,6 @@
 " jacqui's colors
-" doesn't specify background; i use it with "lavender" or "lemonchiffon" as my
-" xterm background color
+" doesn't specify a background color. i use it with ~lavender~ xterm background;
+" ~light slate gray~ also works: ":hi Normal ctermfg=black ctermbg=189"
 
 hi clear
 if exists("syntax_on")
