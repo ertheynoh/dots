@@ -12,7 +12,6 @@ alias l="ls -F"
 alias ll="ls -Fal"
 alias df="df -h"
 alias c="cd .."
-alias dd="clear"
 alias :q="exit"
 
 alias ed="ed -p~"

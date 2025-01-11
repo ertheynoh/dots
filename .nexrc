@@ -6,8 +6,6 @@ set autoindent
 set iclower
 set wraplen=80
 set showmatch
-
-" tab for command history editing and filename completion
 set cedit=\	
 set filec=\	
 

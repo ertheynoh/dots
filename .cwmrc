@@ -3,6 +3,7 @@
 # applications menu
 command xterm xterm 
 command files xfe
+command note "xterm -geometry 65x20 -e nvi"
 command web firefox
 command mail thunderbird
 command calc "xcalc -stipple"
