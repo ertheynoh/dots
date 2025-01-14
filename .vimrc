@@ -30,15 +30,9 @@ map \- :.t.<CR>:s/./-/g<CR>
 map \3 I### <ESC>A ###<ESC><CR>
 map \4 I#### <ESC>A ####<ESC><CR>
 
-
-" macros
-
-"" neocities html boilerplate
-map \n :-1read $HOME/pandoc/snippets/neocities_post.html<CR>/title<CR>f>a
-
 "" copy current paragraph, visual mode selection, or line to tmux pane 1
 "" for sending code to an interpreter without leaving vim :)
-map mm vip:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
-map mf :w \| !tmux loadb % && tmux pasteb -t .1<CR><CR>
-map ms :w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
-map ml V:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
+map vv vip:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
+map vf :w \| !tmux loadb % && tmux pasteb -t .1<CR><CR>
+map vs :w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>
+map vl V:w ! cat \| tmux loadb - && tmux pasteb -t .1<CR><CR>

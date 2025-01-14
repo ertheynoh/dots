@@ -20,12 +20,9 @@ map \- :.t.:s/./-/g
 map \3 I### A ###
 map \4 I#### A ####
 
-" neocities html boilerplate
-map \n :-1read $HOME/pandoc/snippets/neocities_post.html/titlef>a
-
 " copy current paragraph, file, marked selection ("a), or line to tmux pane 1 
 " for running code through an interpreter without leaving vi :)
-map mm {j^ma}k$:'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
-map mf :w | !tmux loadb % && tmux pasteb -t .1
-map ms :'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
-map ml :. w ! cat | tmux loadb - && tmux pasteb -t .1
+map vv {j^ma}k$:'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
+map vf :w | !tmux loadb % && tmux pasteb -t .1
+map vs :'a,. w ! cat | tmux loadb - && tmux pasteb -t .1
+map vl :. w ! cat | tmux loadb - && tmux pasteb -t .1
