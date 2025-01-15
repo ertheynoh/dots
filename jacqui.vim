@@ -1,6 +1,11 @@
-" jacqui's colors
-" doesn't specify a background color. i use it with ~lavender~ xterm background;
-" ~light slate gray~ also works: ":hi Normal ctermfg=black ctermbg=189"
+" jacqui's vim colors 
+" 
+" doesn't specify a background color. i think it looks nice with xterm
+" background set to 'lavender' (e6e6fa). :^)
+"
+" if limited to 256 colors or otherwise want to specify background in the
+" colorscheme itself, 'light slate gray' (189) also works: (hi Normal
+" ctermfg=black ctermbg=189) 
 
 hi clear
 if exists("syntax_on")
