@@ -4,7 +4,7 @@ export LC_CTYPE="en_US.UTF-8"
 export GTK_IM_MODULE="xim"
 export LESSCHARSET="UTF-8"
 
-export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/games
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/games:$HOME/.local/share/gem/ruby/3.3/bin
 export ENV=$HOME/.kshrc
 
 xset b off

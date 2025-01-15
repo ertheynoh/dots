@@ -13,7 +13,7 @@ command kill xkill
 command xlock xlock
 
 # window behavior
-gap 17 3 0 0
+gap 16 3 0 0
 sticky yes
 ignore "xconsole"
 autogroup 0 xconsole,XConsole
