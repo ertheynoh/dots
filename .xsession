@@ -12,7 +12,7 @@ setxkbmap -option compose:ralt
 xrdb -merge $HOME/.Xresources
 ulimit -Sc 0
 
-xwallpaper --stretch $HOME/pictures/macOS_wallpapers/Leaves.jpg &
+xsetroot -bitmap ~/pictures/bitmap-walls/bw-bgnd/leaves.xbm -fg "#8caba8" -bg "#dfdfde" &
 $HOME/bin/statusbar.sh | lemonbar -p -d &
 xbattbar -t 2 -I darkseagreen -i slategrey &
 xidle -timeout 1200 &

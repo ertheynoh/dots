@@ -1,4 +1,4 @@
-" jacqui's vim colors 
+" jacqui'r vim colors 
 " 
 " doesn't specify a background color. i think it looks nice with xterm
 " background set to 'lavender' (e6e6fa). :^)
@@ -31,4 +31,4 @@ hi htmlBoldUnderline	cterm=bold,underline	ctermfg=NONE
 hi htmlBoldUnderlineItalic  cterm=bold,underline,italic	    ctermfg=NONE
 hi VertSplit		cterm=reverse		ctermfg=NONE
 hi Visual		cterm=reverse		ctermfg=183	ctermbg=0
-hi Error		cterm=none		ctermfg=0
+hi Error		cterm=none		ctermfg=0	ctermbg=183
