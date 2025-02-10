@@ -6,6 +6,9 @@ command files xfe
 command note "xterm -geometry 65x20 -e nvi"
 command web firefox
 command mail thunderbird
+command keys keepassxc
+command books calibre
+command nic nicotine
 command calc "xcalc -stipple"
 command clock "xclock -bg cornsilk -geom 248x261+11+27"
 command "(>.>)" "xeyes -geom +34+910"
@@ -33,6 +36,7 @@ bind-key 4-t "xterm -bg lemonchiffon -fg black"
 bind-key 4-b firefox
 bind-key 4-f xfe
 bind-key 4-m thunderbird
+bind-key 4-p keepassxc
 bind-key 4-c "xterm -bg lavender -fg black -g +427+15 -g 104x33 -e cmus"
 bind-key 4-n "xcalc -stipple"
 bind-key 4-z 'sct 3500'

@@ -16,7 +16,7 @@ set backspace=indent,eol,start
 set wildmenu
 set t_Co=256
 set textwidth=80
-set cedit=<Tab>
+set cedit=<Tab><Tab>
 colorscheme jacqui
 syntax on
 
