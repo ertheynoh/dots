@@ -12,6 +12,11 @@ setxkbmap -option compose:ralt
 xrdb -merge $HOME/.Xresources
 ulimit -Sc 0
 
+# enable scrolling with trackpoint and middle button
+xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1
+xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Button" 2
+xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Axes" 6 7 4 5
+
 xsetroot -bitmap ~/pictures/bitmap-walls/bw-bgnd/leaves.xbm -fg "#8caba8" -bg "#dfdfde" &
 $HOME/bin/statusbar.sh | lemonbar -p -d &
 xbattbar -t 2 -I darkseagreen -i slategrey &

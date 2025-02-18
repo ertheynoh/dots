@@ -19,6 +19,8 @@ map \= :.t.:s/./=/g
 map \- :.t.:s/./-/g
 map \3 I### A ###
 map \4 I#### A ####
+map \. {jma}kmb:'a,'bs/^/\>\ :'a,'bs/$/\ \ 
+map \, {jma}kmb:'a,'bs/^/\>\ 
 
 " copy current paragraph, file, marked selection ("a), or line to tmux pane 1 
 " for running code through an interpreter without leaving vi :)
